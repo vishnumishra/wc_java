@@ -26,5 +26,11 @@ public class WcTest{
 		String st = "Welcome to \r\n the \r\n world\r\n of \r\njava\r\n\r\n\r\n";
 		assertEquals(7,wc.countLines(st));
 	}
+	@Test
+	public void count_the_number_of_characters_in_the_string(){
+		WcLib wc = new WcLib();
+		String st = "Welcome to \r\n the \r\n world\r\n of \r\njava";
+		assertEquals(38,wc.countChar(st));
+	}
 	
 }

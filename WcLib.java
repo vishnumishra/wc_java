@@ -12,5 +12,7 @@ public class WcLib{
 		}
 		return count;
 	}
-
+	public int countChar(String str){
+ 	return str.length();
+	}
 }
