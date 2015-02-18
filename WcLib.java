@@ -4,5 +4,13 @@ public class WcLib{
 		words = str.split("\\s+");
 		return words.length;
 	}
+	public int countLines(String str){
+		int count=0;
+		for(char ch:str.toCharArray()){
+			if(ch =='\n')
+				count++;
+		}
+		return count;
+	}
 
 }

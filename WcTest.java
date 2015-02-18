@@ -15,5 +15,16 @@ public class WcTest{
 		WcLib wc = new WcLib();
 		assertEquals(6,wc.countWords(st));
 	}
+	@Test
+	public void line_give_the_number_of_line_in_the_text(){
+		WcLib wc = new WcLib();
+		assertEquals(1,wc.countLines(str));
+	}
+	@Test
+	public void line_give_the_number_of_line_in_the_text_1(){
+		WcLib wc = new WcLib();
+		String st = "Welcome to \r\n the \r\n world\r\n of \r\njava\r\n\r\n\r\n";
+		assertEquals(7,wc.countLines(st));
+	}
 	
 }
