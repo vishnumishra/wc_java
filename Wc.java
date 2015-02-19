@@ -1,9 +1,11 @@
-public class Wc{
-	public static void main(String[] args) {
-		// int words,lines,characters;
-		// WcLib wc = new WcLib();
-		// words = WcLib.countWords;
-		// lines = WcLib.countLines;
+// import java.io.IOException;
+
+	public class Wc{
+	public static void main(String[] args){
+		String content = MyFile.readFile(args[0]);
+		WcLib wc = new WcLib(content);
 		
+		Printer.WcDa	ta(wc,args[0]);
+
 	}
  }

@@ -1,18 +1,23 @@
 public class WcLib{
-	public int countWords(String str){
+	private  String string;
+	public WcLib(String str){
+		this.string = str;
+	}
+
+	public int countWords(){
 		String words[];
-		words = str.split("\\s+");
+		words = string.split("\\s+");
 		return words.length;
 	}
-	public int countLines(String str){
+	public int countLines(){
 		int count=0;
-		for(char ch:str.toCharArray()){
+		for(char ch:string.toCharArray()){
 			if(ch =='\n')
 				count++;
 		}
 		return count;
 	}
-	public int countChar(String str){
- 	return str.length();
+	public int countChar(){
+ 		return string.length();
 	}
 }
