@@ -22,7 +22,7 @@ public class WcTest{
 	}
 	@Test
 	public void line_give_the_number_of_line_in_the_text_1(){
-		String st = "Welcome to \r\n the \r\n world\r\n of \r\njava\r\n \r\n \r\n";
+		String st = "Welcome to \r\n the \r\n world\r\n of \r\njava\r\n \r\n \r\n ";
 		WcLib wc = new WcLib(st);
 		assertEquals(7,wc.countLines());
 	}
@@ -47,5 +47,5 @@ public class WcTest{
 		WcLib wc = new WcLib("");
 		assertEquals(0,wc.countChar());
 	}
-	
+
 }

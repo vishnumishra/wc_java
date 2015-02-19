@@ -1,0 +1,14 @@
+
+===================v.2=============================
+
+1. seprate the arguments; file / flag
+	isFile(); 
+	else isValidFlag();
+
+2. process accordin to the arguments and flags;
+	2.1 no flag show all ;
+	2.2 flag show according to flag;
+
+3. 
+
+
