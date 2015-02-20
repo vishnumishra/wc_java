@@ -1,9 +1,8 @@
 public class HandleArgs{
-	public  String[] flags,files;
+	public  String[] files;
 	public  WcLib[] wcObj ;
 
-	public HandleArgs(String[]  files,String[] flags) {
-		this.flags = flags;
+	public HandleArgs(String[]  files) {
 		this.files = files;
 		this.wcObj = getResult();
 	};
