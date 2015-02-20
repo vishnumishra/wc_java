@@ -8,3 +8,6 @@ public class Printer{
 		System.out.println("  "+lines +"	"+ words+"	" +characters +" "+path );
 	}
 }
+
+
+
